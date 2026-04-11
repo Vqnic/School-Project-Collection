@@ -1,0 +1,181 @@
+:root {
+  --color-body-bg: #f4f4f9;
+  --color-app-container-bg: #403c3b;
+  --color-shadow-overlay: rgba(0, 0, 0, 0.1);
+  --color-count-border: #ddd;
+  --color-count-bg: #e9ecef;
+  --color-button-bg: #5db4a0;
+  --color-white: white;
+  --color-button-hover-bg: #3b6a5e;
+  --color-note-text: #6c757d;
+  --color-input-bg: aliceblue;
+  --color-input-text: black;
+  --color-input-focus-border-top: #7ee0c9;
+  --color-heading-text: #fff;
+  --color-list-bg: #584f4d;
+  --color-item-bg: #ec8b68;
+  --color-item-border-top: #fe9772;
+  --color-item-border-bottom: #9f593f;
+  --color-item-shadow: #9f593f;
+  --color-hot-bg: #d7666b;
+  --color-hot-shadow: #914141;
+  --color-hot-border-top: #e99295;
+  --color-hot-border-bottom: #914141;
+  --color-cool-bg: #6cc0ac;
+  --color-cool-shadow: #3b6a5e;
+  --color-cool-border-top: #7ee0c9;
+  --color-cool-border-bottom: #3b6a5e;
+  --color-complete-bg: #999;
+  --color-complete-border-top: #666;
+  --color-complete-shadow: #333;
+}
+
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding: 20px;
+  background-color: var(--color-body-bg);
+}
+
+.app-container {
+  max-width: 400px;
+  padding: 30px;
+  background-color: var(--color-app-container-bg);
+  margin: 0 auto 0 auto;
+  border-radius: 2px;
+  box-shadow: 0 4px 12px var(--color-shadow-overlay);
+  text-align: center;
+}
+
+.count-display {
+  font-size: 1.5em;
+  margin: 20px 0;
+  padding: 10px;
+  border: 1px solid var(--color-count-border);
+  border-radius: 2px;
+  background-color: var(--color-count-bg);
+}
+
+.counter-button {
+  background-color: var(--color-button-bg);
+  color: var(--color-white);
+  border: none;
+  padding: 10px 10px;
+  margin: 5px;
+  width: 30%;
+  font-size: 1.2em;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.counter-button:hover {
+  background-color: var(--color-button-hover-bg);
+}
+
+.note {
+  margin-top: 30px;
+  font-size: 0.9em;
+  color: var(--color-note-text);
+}
+
+@media all and (min-width: 1200px) {
+  #app {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+}
+@media all and (min-width: 960px) and (max-width: 1199px) {
+  #app {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+}
+
+@media all and (max-width: 400px) {
+  img {
+    display: block;
+    padding: 5%;
+    margin: auto;
+  }
+}
+
+@media all and (min-width: 400px) {
+}
+
+input {
+  border: none;
+  position: relative;
+  height: 58px;
+  left: 0;
+  width: 98%;
+  background-color: var(--color-input-bg);
+  justify-content: center;
+  vertical-align: middle;
+  text-align: left;
+  color: var(--color-input-text);
+  cursor: default;
+  border-radius: 2px;
+  font-size: 1.5em;
+}
+input:focus {
+  border: none;
+  border-top: 1px solid var(--color-input-focus-border-top);
+  outline: none;
+}
+
+h2 {
+  color: var(--color-heading-text);
+  font-size: 2em;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  padding: 0.5em 0 0.5em 0;
+  margin: 0 0 23px 0;
+}
+
+ul {
+  background-color: var(--color-list-bg);
+  border: none;
+  padding: 0;
+  margin-top: 20px;
+}
+li {
+  background-color: var(--color-item-bg);
+  color: var(--color-heading-text);
+  border-top: 1px solid var(--color-item-border-top);
+  border-bottom: 1px solid var(--color-item-border-bottom);
+  font-size: 24px;
+  letter-spacing: 0.05em;
+  list-style-type: none;
+  text-shadow: 2px 2px 1px var(--color-item-shadow);
+  justify-content: center;
+  vertical-align: middle;
+  border-radius: 2px;
+  padding: 10px;
+}
+
+.hot {
+  background-color: var(--color-hot-bg);
+  color: var(--color-heading-text);
+  text-shadow: 2px 2px 1px var(--color-hot-shadow);
+  border-top: 1px solid var(--color-hot-border-top);
+  border-bottom: 1px solid var(--color-hot-border-bottom);
+}
+
+.cool {
+  background-color: var(--color-cool-bg);
+  color: var(--color-heading-text);
+  text-shadow: 2px 2px 1px var(--color-cool-shadow);
+  border-top: 1px solid var(--color-cool-border-top);
+  border-bottom: 1px solid var(--color-cool-border-bottom);
+}
+
+.complete {
+  background-color: var(--color-complete-bg);
+  color: var(--color-heading-text);
+  background-position: center, right;
+  background-repeat: no-repeat;
+  border-top: 1px solid var(--color-complete-border-top);
+  text-shadow: 2px 2px 1px var(--color-complete-shadow);
+}
