@@ -1,2 +1,2 @@
 # School-Project-Collection
-The place I upload my school projects.
+The place I upload my past school projects.
